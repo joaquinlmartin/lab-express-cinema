@@ -1,0 +1,29 @@
+<div class="movies-content">
+    {{#each movies}}
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{{this.image}}" alt="Card image" />
+          <div class="card-body">
+              <h5 class="card-title">{{this.title}}</h5>
+              
+              <a href="/movies/{{this._id}}" class="btn btn-primary">See more</a>
+          </div>
+      </div>
+    {{/each}}
+</div>
+
+
+
+{{!-- <div class="movies-content">
+{{#each}}
+  <div class="card" style="width: 18rem">
+      <img class= "card-img-top" src="{{this.image}}" alt="Card image">
+      <div class="card-body">
+          <h4 class="card-title">{{this.title}}</h5>
+          <h5 class="card-director">{{this.director}}</h5>
+          <h6 class="card-stars">{{this.stars}}</h6>
+          <h6 class="card-description">{{this.description}}</h6>
+          <a href="/movies/{{this._id}}" class="btn btn-primary">See more</a>
+      </div>
+  </div>
+{{/each}}
+</div> --}}
